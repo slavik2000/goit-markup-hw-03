@@ -23,6 +23,61 @@ body {
   letter-spacing: var(--main-letter-spacing);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  align-items: center;
+}
+
 .link {
   text-decoration: none;
   color: var(--main-color-link);
@@ -33,6 +88,12 @@ body {
 }
 
 /* start header */
+.navigation {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
 .logo {
   color: var(--color-primary-hover);
   font-family: var(--secondary-font-famaly);
@@ -54,6 +115,15 @@ body {
 .nav-list {
   font-weight: 500;
   letter-spacing: 0.02em;
+  display: flex;
+  margin-left: 94px;
+}
+
+.nav-item {
+  margin-right: 52px;
+}
+.nav-item:last-child {
+  padding-right: 0;
 }
 
 .nav-link:hover,
@@ -71,6 +141,7 @@ body {
 
 .contacts-header {
   font-weight: 500;
+  display: flex;
 }
 .contacts-item {
   letter-spacing: 0.02em;
@@ -79,6 +150,10 @@ body {
 .contacts-mail,
 .contacts-number {
   color: var(--secondary-color-link);
+}
+
+.contacts-mail {
+  padding-right: 52px;
 }
 
 .contacts-mail-active {
@@ -96,6 +171,18 @@ body {
 /* start main */
 .main-banner {
   background-color: var(--color-banner);
+  padding-top: 215px;
+  padding-bottom: 200px;
+}
+
+.main-list-page {
+  display: flex;
+}
+
+.list-page {
+  display: flex;
+  padding-top: 95px;
+  padding-bottom: 40px;
 }
 
 .main-button {
@@ -107,6 +194,11 @@ body {
   cursor: pointer;
   font-family: var(--primary-font-famaly);
   font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 .main-button:hover,
@@ -122,11 +214,28 @@ body {
   font-size: 44px;
   letter-spacing: 0.06em;
   font-weight: 900;
+  margin-bottom: 28px;
+}
+
+.works {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.list-works {
+  display: flex;
+  margin-left: 30px;
+}
+
+.item-works {
+  margin-left: -30px;
+  width: calc((100% - 90px) / 3);
 }
 
 .title-page {
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .desc-page {
   line-height: 1.71;
@@ -137,16 +246,26 @@ body {
 .title-section {
   line-height: 1.16;
   font-size: 36px;
-  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+  text-align: center;
 }
 .team {
   background-color: var(--color-gray);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
+.team-list {
+  display: flex;
+}
+
 .team-name {
   font-size: 16px;
   letter-spacing: 0.03em;
   font-weight: 500;
   line-height: 1.18;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .team-person {
   font-size: 16px;
@@ -154,7 +273,12 @@ body {
   color: var(--secondary-color);
   line-height: 1.18;
   font-weight: 400;
+  text-align: center;
 }
+.team-img {
+  margin-bottom: 10px;
+}
+
 /* end main */
 
 /* start footer */
