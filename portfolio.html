@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
@@ -17,52 +24,56 @@
     <!-- Header -->
     <header class="header">
       <div class="container header-container">
-      <nav class="navigation">
-        <a class="logo link" href="" lang="en"
-          >Web<span class="logo-dark">Studio</span>
-        </a>
-        <ul class="nav-list list">
-          <li class="nav-item">
-            <a class="nav-link link" href="./index.html">Студія</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link active" href="./portfolio.html">
-              Портфоліо</a
+        <nav class="navigation">
+          <a class="logo link" href="" lang="en"
+            >Web<span class="logo-dark">Studio</span>
+          </a>
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link active" href="./portfolio.html">
+                Портфоліо</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-header list">
+          <li class="contacts-item">
+            <a
+              class="contacts-mail contacts-mail-active link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link link" href="">Контакти</a>
+          <li class="contacts-item">
+            <a class="contacts-number link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="contacts-header list">
-        <li class="contacts-item">
-          <a
-            class="contacts-mail contacts-mail-active link"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contacts-item">
-          <a class="contacts-number link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-      </div>  
+      </div>
     </header>
     <!-- Main -->
     <main class="main">
       <section class="content-portfolio section">
         <h1 class="visually-hidden">Portfolio</h1>
-        <ul class="filter-list list">
-          <li class="filter-item"><button type="button">Усі</button></li>
-          <li class="filter-item"><button type="button">Веб-сайти</button></li>
-          <li class="filter-item"><button type="button">Додатки</button></li>
-          <li class="filter-item"><button type="button">Дизайн</button></li>
-          <li class="filter-item"><button type="button">Маркетинг</button></li>
-        </ul>
         <div class="container">
+          <ul class="filter-list list">
+            <li class="filter-item"><button type="button">Усі</button></li>
+            <li class="filter-item">
+              <button type="button">Веб-сайти</button>
+            </li>
+            <li class="filter-item"><button type="button">Додатки</button></li>
+            <li class="filter-item"><button type="button">Дизайн</button></li>
+            <li class="filter-item">
+              <button type="button">Маркетинг</button>
+            </li>
+          </ul>
           <ul class="portfolio-list">
             <li class="portfolio-item list">
               <a href="" class="portolio-link link">
@@ -76,11 +87,6 @@
                   <h2 class="portfolio-title">Технокряк</h2>
                   <p class="portfolio-text">Веб-сайт</p>
                 </div>
-                <p class="visually-hidden">
-                  Технокряк это современная плащадка распространения
-                  короновируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкуретов
-                </p>
               </a>
             </li>
             <li class="portfolio-item list">
@@ -97,11 +103,6 @@
                   </h2>
                   <p class="portfolio-text">Дизайн</p>
                 </div>
-                <p class="visually-hidden">
-                  Технокряк это современная плащадка распространения
-                  короновируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкуретов
-                </p>
               </a>
             </li>
             <li class="portfolio-item list">
@@ -118,11 +119,6 @@
                   </h2>
                   <p class="portfolio-text">Додаток</p>
                 </div>
-                <p class="visually-hidden">
-                  Технокряк это современная плащадка распространения
-                  короновируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкуретов
-                </p>
               </a>
             </li>
             <li class="portfolio-item list">
@@ -139,11 +135,6 @@
                   </h2>
                   <p class="portfolio-text">Маркетинг</p>
                 </div>
-                <p class="visually-hidden">
-                  Технокряк это современная плащадка распространения
-                  короновируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкуретов
-                </p>
               </a>
             </li>
             <li class="portfolio-item list">
@@ -160,11 +151,6 @@
                   </h2>
                   <p class="portfolio-text">Додаток</p>
                 </div>
-                <p class="visually-hidden">
-                  Технокряк это современная плащадка распространения
-                  короновируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкуретов
-                </p>
               </a>
             </li>
             <li class="portfolio-item list">
@@ -180,11 +166,6 @@
                   </h2>
                   <p class="portfolio-text">Веб-сайт</p>
                 </div>
-                <p class="visually-hidden">
-                  Технокряк это современная плащадка распространения
-                  короновируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкуретов
-                </p>
               </a>
             </li>
             <li class="portfolio-item list">
@@ -201,11 +182,6 @@
                   </h2>
                   <p class="portfolio-text">Дизайн</p>
                 </div>
-                <p class="visually-hidden">
-                  Технокряк это современная плащадка распространения
-                  короновируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкуретов
-                </p>
               </a>
             </li>
             <li class="portfolio-item list">
@@ -220,11 +196,6 @@
                   <h2 class="portfolio-title">Проєкт <span>LAB</span></h2>
                   <p class="portfolio-text">Маркетинг</p>
                 </div>
-                <p class="visually-hidden">
-                  Технокряк это современная плащадка распространения
-                  короновируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкуретов
-                </p>
               </a>
             </li>
             <li class="portfolio-item list">
@@ -239,11 +210,6 @@
                   <h2 class="portfolio-title" lang="en">Growing Business</h2>
                   <p class="portfolio-text">Додаток</p>
                 </div>
-                <p class="visually-hidden">
-                  Технокряк это современная плащадка распространения
-                  короновируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкуретов
-                </p>
               </a>
             </li>
           </ul>
@@ -253,31 +219,31 @@
     <!-- Footer -->
     <footer class="footer section">
       <div class="container">
-      <a class="logo link" href="" lang="en"
-        >Web<span class="logo-light">Studio</span></a
-      >
-      <address class="address">
-        <ul class="address-list list">
-          <li class="address-item">
-            <a
-              class="address-link addres-street"
-              href="https://goo.gl/maps/nNuL6ZfspfBwPJXE8"
-              target="_blank"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li class="address-item">
-            <a class="address-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="address-item">
-            <a class="address-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+        <a class="logo link" href="" lang="en"
+          >Web<span class="logo-light">Studio</span></a
+        >
+        <address class="address">
+          <ul class="address-list list">
+            <li class="address-item">
+              <a
+                class="address-link addres-street"
+                href="https://goo.gl/maps/nNuL6ZfspfBwPJXE8"
+                target="_blank"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>
