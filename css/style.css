@@ -41,9 +41,9 @@ ul {
 }
 
 img {
-  display: block;
+  /* display: block;
   max-width: 100%;
-  height: auto;
+  height: auto; */
 }
 
 .visually-hidden {
@@ -227,25 +227,27 @@ margin-right: 50px;
 }
 
 .works {
-  /* padding-top: 40px; */
-  /* padding-bottom: 94px;  */
+
 }
 
 .list-works {
   display: flex;
-  margin-left: -30px;
 }
 
 .item-works {
   margin-left: 30px;
-  width: calc((100% - 90px) / 3);
-}
+  /* width: calc((100% - 90px) / 3); */
+} 
 .item-works:nth-child(1) {
 margin-left: 0;
 }
 
 .item-page:not(:last-child){
 margin-right: 30px;
+}
+
+.item-page{
+  width: 270px;
 }
 
 .title-page {
@@ -273,12 +275,12 @@ margin-right: 30px;
 
 .team-list {
   display: flex;
-  margin-left: -30px;
+  /* margin-left: -30px; */
 }
 
 .team-item {
   margin-left: 30px;
-  width: calc((100% - 120px) / 4);
+  /* width: calc((100% - 120px) / 4); */
 }
 .team-item:nth-child(1){
   margin-left: 0;
@@ -403,6 +405,7 @@ margin-right: 30px;
   letter-spacing: 0.03em;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
 }
 .portfolio-text {
   font-size: 16px;
@@ -413,5 +416,6 @@ margin-right: 30px;
 }
 
 .portfolio-img {
+  display: block;
 }
 /*end style portfolio */
